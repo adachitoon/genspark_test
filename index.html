@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたの魅力開花レベル診断 〜まだ見ぬ最高の自分に出会う〜</title>
+    <meta name="description" content="簡単5つの質問で、あなたの魅力がどのくらい開花しているかをチェック！内面と外面の両方から、今の状態を診断します。">
+    
+    <!-- OGP Meta Tags（修正版） -->
+    <meta property="og:title" content="あなたの魅力開花レベル診断 〜まだ見ぬ最高の自分に出会う〜">
+    <meta property="og:description" content="簡単5つの質問で、あなたの魅力がどのくらい開花しているかをチェック！内面と外面の両方から診断します。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uwuzwfvj.gensparkspace.com/">
+    <meta property="og:site_name" content="魅力開花レベル診断">
+    <meta property="og:locale" content="ja_JP">
+    
+    <!-- 重要：OGP画像（これがないとLINEでプレビューが出ません） -->
+    <meta property="og:image" content="https://uwuzwfvj.gensparkspace.com/images/ogp-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="あなたの魅力開花レベル診断">
+    
+    <!-- Twitter Card（修正版） -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="あなたの魅力開花レベル診断">
+    <meta name="twitter:description" content="簡単5つの質問で、あなたの魅力開花レベルをチェック！">
+    <meta name="twitter:image" content="https://uwuzwfvj.gensparkspace.com/images/ogp-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* カスタムスタイル */
+        .font-script { font-family: 'Kaushan Script', cursive; }
+        .font-jp { font-family: 'Noto Sans JP', sans-serif; }
+        
+        /* 花のアニメーション */
+        @keyframes bloom {
+            0% { transform: scale(0.8) rotate(0deg); opacity: 0.7; }
+            50% { transform: scale(1.1) rotate(2deg); opacity: 1; }
+            100% { transform: scale(1) rotate(0deg); opacity: 0.9; }
+        }
+        
+        .flower-animation {
+            animation: bloom 3s ease-in-out infinite;
+        }
+        
+        /* グラデーション背景 */
+        .bg-bloom {
+            background: linear-gradient(135deg, #ffeef8 0%, #fff0f5 25%, #f0f8ff 50%, #f5fffa 75%, #fffafa 100%);
+        }
+        
+        /* ボタンのホバーエフェクト */
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b9d, #ff8fab);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #ff5588, #ff7799);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 157, 0.4);
+        }
+        
+        /* カードのスタイル */
+        .card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* プログレスバー */
+        .progress-bar {
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body class="font-jp bg-bloom min-h-screen">
+    
+    <!-- メインコンテナ -->
+    <div id="app" class="min-h-screen flex items-center justify-center p-4">
+        
+        <!-- スタート画面 -->
+        <div id="start-screen" class="max-w-2xl w-full">
+            <!-- ヘッダー装飾 -->
+            <div class="text-center mb-8">
+                <div class="flower-animation text-6xl mb-4">🌸</div>
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2 font-jp">
+                    あなたの魅力開花レベル診断
+                </h1>
+                <p class="text-lg font-script text-pink-600 mb-4">
+                    〜まだ見ぬ最高の自分に出会う〜
+                </p>
+            </div>
+            
+            <!-- メインカード -->
+            <div class="card rounded-2xl shadow-xl p-8 text-center">
+                <div class="mb-6">
+                    <div class="text-4xl mb-4">🌺🌸🌼</div>
+                    <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+                        あなたという花の魅力、今どれくらい咲いてる？
+                    </h2>
+                    <p class="text-gray-600 text-base md:text-lg leading-relaxed">
+                        簡単<strong class="text-pink-600">5つの質問</strong>で、あなたの<br>
+                        <strong class="text-pink-600">"魅力開花レベル"</strong>をチェック！
+                    </p>
+                </div>
+                
+                <!-- 診断の特徴 -->
+                <div class="grid md:grid-cols-3 gap-4 my-8">
+                    <div class="flex flex-col items-center p-4 bg-white bg-opacity-50 rounded-lg">
+                        <div class="text-2xl mb-2">⏰</div>
+                        <div class="text-sm font-semibold text-gray-700">約2分</div>
+                        <div class="text-xs text-gray-600">で完了</div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-white bg-opacity-50 rounded-lg">
+                        <div class="text-2xl mb-2">💝</div>
+                        <div class="text-sm font-semibold text-gray-700">内面×外面</div>
+                        <div class="text-xs text-gray-600">両方から診断</div>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-white bg-opacity-50 rounded-lg">
+                        <div class="text-2xl mb-2">✨</div>
+                        <div class="text-sm font-semibold text-gray-700">具体的</div>
+                        <div class="text-xs text-gray-600">アドバイス付き</div>
+                    </div>
+                </div>
+                
+                <!-- 診断開始ボタン -->
+                <button 
+                    onclick="startDiagnosis()" 
+                    class="btn-primary text-white font-semibold py-4 px-8 rounded-full text-lg shadow-lg w-full md:w-auto"
+                >
+                    <i class="fas fa-seedling mr-2"></i>
+                    診断を始める
+                </button>
+                
+                <p class="text-xs text-gray-500 mt-4">
+                    ※無料で診断できます
+                </p>
+            </div>
+        </div>
+        
+        <!-- 診断画面 -->
+        <div id="quiz-screen" class="max-w-2xl w-full hidden">
+            <!-- プログレスバー -->
+            <div class="mb-8">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-sm font-medium text-gray-600">質問 <span id="current-question">1</span> / 5</span>
+                    <span class="text-sm font-medium text-gray-600"><span id="progress-percentage">20</span>%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2">
+                    <div id="progress-bar" class="progress-bar bg-gradient-to-r from-pink-400 to-pink-600 h-2 rounded-full" style="width: 20%"></div>
+                </div>
+            </div>
+            
+            <!-- 質問カード -->
+            <div class="card rounded-2xl shadow-xl p-6 md:p-8">
+                <div class="text-center mb-6">
+                    <div id="question-icon" class="text-4xl mb-4">🌸</div>
+                    <h2 id="question-text" class="text-lg md:text-xl font-semibold text-gray-800 leading-relaxed">
+                        <!-- 質問がここに表示されます -->
+                    </h2>
+                </div>
+                
+                <!-- 選択肢 -->
+                <div id="answer-options" class="space-y-3">
+                    <!-- 選択肢がここに動的に生成されます -->
+                </div>
+                
+                <!-- 前に戻るボタン -->
+                <div class="mt-8 text-center">
+                    <button 
+                        id="prev-btn" 
+                        onclick="previousQuestion()" 
+                        class="text-gray-500 hover:text-gray-700 text-sm underline hidden"
+                    >
+                        <i class="fas fa-arrow-left mr-1"></i>
+                        前の質問に戻る
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 結果算出中画面 -->
+        <div id="loading-screen" class="max-w-2xl w-full text-center hidden">
+            <div class="card rounded-2xl shadow-xl p-8">
+                <div class="flower-animation text-6xl mb-6">🌸</div>
+                <h2 class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+                    あなたの魅力を分析中です…
+                </h2>
+                <div class="flex justify-center items-center mb-6">
+                    <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-pink-600"></div>
+                </div>
+                <p class="text-gray-600">
+                    少々お待ちください
+                </p>
+            </div>
+        </div>
+        
+        <!-- 結果画面 -->
+        <div id="result-screen" class="max-w-4xl w-full hidden">
+            <!-- 結果内容がここに動的に生成されます -->
+        </div>
+        
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
